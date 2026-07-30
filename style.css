@@ -34,7 +34,7 @@ body {
   position: relative;
   height: 100vh;
   /* Penuh layar */
-  background-image: url("/image/money.png");
+  background-image: url("money.png");
   background-size: cover;
   background-position: center;
   display: flex;
