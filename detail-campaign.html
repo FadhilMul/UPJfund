@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign Detail - UPJfund</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar dengan Background Gelap Solid -->
+    <header class="header header-dark">
+      <a href="index.html" class="logo"><span>UPJ</span>fund</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="campaign.html" class="active">Campaign</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-btns">
+        <a href="#" class="btn btn-outline">Login</a>
+        <a href="#" class="btn btn-accent">Register</a>
+      </div>
+    </header>
+
+    <!-- Konten Utama Page Campaign Detail -->
+    <main class="campaign-detail-page">
+      <div class="container">
+        <!-- BAGIAN ATAS: Judul, Gambar & Kartu Ringkasan -->
+        <div class="detail-top-grid">
+          <!-- Kolom Kiri: Judul & Gambar Utama -->
+          <div class="detail-left">
+            <h1 class="detail-title">Pengembangan Toolkit AI Anti-Phishing</h1>
+            <div class="detail-main-img">
+              <!-- Placeholder Gambar -->
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#7f8c8d"
+                stroke-width="1.5"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="2.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Kartu Donasi -->
+          <div class="detail-right">
+            <div class="summary-card">
+              <div class="summary-header">
+                <span class="summary-label">Terkumpul</span>
+                <span class="summary-date">10 Mei 2026</span>
+              </div>
+
+              <h2 class="summary-amount">Rp15.000.000</h2>
+
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+
+              <div class="summary-stats">
+                <div class="stat-item">
+                  <span class="stat-value">42</span>
+                  <span class="stat-label">Donatur</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">15</span>
+                  <span class="stat-label">Share</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-value">14</span>
+                  <span class="stat-label">Days left</span>
+                </div>
+              </div>
+
+              <div class="summary-actions">
+                <a href="#" class="btn-card btn-card-solid w-100 mb-10"
+                  >Donate now</a
+                >
+                <a href="#" class="btn-card btn-card-outline w-100">Share</a>
+              </div>
+
+              <!-- Profil Yayasan / Pembuat Campaign -->
+              <div class="foundation-profile">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                <span>CyberSec Student Club</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BAGIAN BAWAH: Tabs & Konten Teks -->
+        <div class="detail-tabs-section">
+          <div class="tabs-card">
+            <!-- Navigasi Tabs -->
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-target="tab-deskripsi">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"
+                  />
+                  <path
+                    d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"
+                  />
+                </svg>
+                Deskripsi
+              </button>
+              <button class="tab-btn" data-target="tab-update">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M3 11l18-5v12L3 14v-3z" />
+                  <path d="M11.5 13.5c-2.5 2.5-7.5 2.5-7.5 2.5s0-5 2.5-7.5" />
+                </svg>
+                Update
+              </button>
+              <button class="tab-btn" data-target="tab-comment">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+                Comment
+              </button>
+            </div>
+
+            <!-- Container Konten Tab -->
+            <div class="tab-content">
+              <!-- Panel 1: Deskripsi (Aktif Secara Default) -->
+              <div id="tab-deskripsi" class="tab-pane active">
+                <p>
+                  Proyek ini bertujuan untuk membangun sebuah sistem deteksi
+                  dini terhadap link dan email phishing menggunakan algoritma
+                  machine learning. Dana yang terkumpul akan dialokasikan untuk
+                  menyewa server cloud berkinerja tinggi guna melatih model AI,
+                  serta memperluas kapasitas dataset ancaman keamanan siber
+                  terbaru.
+                </p>
+              </div>
+
+              <!-- Panel 2: Update -->
+              <div id="tab-update" class="tab-pane">
+                <h3>Pembaruan Campaign</h3>
+                <p>
+                  <strong>15 Mei 2026:</strong> Server pengujian lokal
+                  menggunakan environment Kali Linux telah berhasil disiapkan
+                  oleh tim pengembang.
+                </p>
+              </div>
+
+              <!-- Panel 3: Comment -->
+              <div id="tab-comment" class="tab-pane">
+                <h3>Komentar Donatur</h3>
+                <div class="comment-item">
+                  <p>
+                    <strong>Ahmad:</strong> Semoga risetnya lancar dan sistemnya
+                    cepat bisa diimplementasikan untuk keamanan data kita!
+                  </p>
+                </div>
+                <div class="comment-item">
+                  <p>
+                    <strong>Siti:</strong> Semangat terus untuk tim penyalur
+                    bantuan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
